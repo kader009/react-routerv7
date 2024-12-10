@@ -30,7 +30,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="shortcut icon" href="../public/icons8-router-100.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="/icons8-router-100.png" type="image/x-icon" />
         <Meta />
         <Links />
       </head>

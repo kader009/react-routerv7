@@ -14,10 +14,12 @@ const About = () => {
     <div>
       <h1 className="text-center font-semibold">About</h1>
       <br />
-      {datas.map((post) => (
-        <div>
-          <h1>{post.id}</h1>
-          <h2>{post.title}</h2>
+      {datas.slice(0, 20).map((post) => (
+        <div key={post.id}>
+          <div>
+            <h1>{post.id}</h1>
+            <h2>{post.title}</h2>
+          </div>
         </div>
       ))}
     </div>
