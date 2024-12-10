@@ -5,6 +5,8 @@ export function Welcome() {
     <main >
       <h1 className="font-semibold capitalize">hellow v7</h1>
       <Link to={'/about'}>About</Link>
+      <br />
+      <Link to={'/login'}>Login</Link>
     </main>
   );
 }
