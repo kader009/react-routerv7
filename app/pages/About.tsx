@@ -8,14 +8,21 @@ async function fetchData() {
 
 const getData = fetchData();
 
+export interface Root {
+  userId: number;
+  id: number;
+  title: string;
+  body: string;
+}
+
 const About = () => {
   const datas = use(getData);
   return (
     <div>
       <h1 className="text-center font-semibold">About</h1>
       <br />
-      {datas.slice(0, 20).map((post) => (
-        <div key={post.id}>
+      {datas.slice(0, 20).map((post: Root) => (
+        <div key={post.id} className="flex">
           <div>
             <h1>{post.id}</h1>
             <h2>{post.title}</h2>
