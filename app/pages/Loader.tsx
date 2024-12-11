@@ -5,14 +5,43 @@ export async function loader() {
   return { data: data };
 }
 
-const Loader = ({ loaderData }: { loaderData: { data: string[] } }) => {
-  console.log(loaderData.data);
+interface Geo {
+  lat: string;
+  lng: string;
+}
+
+interface Address {
+  street: string;
+  suite: string;
+  city: string;
+  zipcode: string;
+  geo: Geo;
+}
+
+interface Company {
+  name: string;
+  catchPhrase: string;
+  bs: string;
+}
+
+interface User {
+  id: number;
+  name: string;
+  username: string;
+  email: string;
+  address: Address;
+  phone: string;
+  website: string;
+  company: Company;
+}
+
+const Loader = ({ loaderData }: { loaderData: { data: User[] } }) => {
   return (
     <div>
       <h1 className="text-center text-blue-700 font-semibold">Loader Data</h1>
       <div>
         {loaderData.data.map((user) => (
-          <div>
+          <div key={user.id}>
             <h1>{user.name}</h1>
           </div>
         ))}
