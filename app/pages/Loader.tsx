@@ -51,7 +51,7 @@ const Loader = ({ loaderData }: { loaderData: { data: User[] } }) => {
           >
             <h1>{user.name}</h1>
             <h2 className="mb-2">{user.email}</h2>
-            <Link to={`/${user.id}`}>
+            <Link to={`/loader/${user.id}`}>
               <span className="bg-black text-white rounded p-1">see more</span>
             </Link>
           </div>
