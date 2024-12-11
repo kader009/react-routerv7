@@ -11,6 +11,8 @@ export function Welcome() {
       <Link to={'/register'}>Register</Link>
       <br />
       <Link to={'/loader'}>Loader</Link>
+      <br />
+      <Link to={'/client'}>ClientLoader</Link>
     </main>
   );
 }
