@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link } from 'react-router';
 
 export async function loader({ params }: { params: { singleId: string } }) {
   const response = await fetch(
@@ -18,7 +18,6 @@ interface User {
 }
 
 const SingleLoader = ({ loaderData }: { loaderData: { data: User } }) => {
-  console.log(loaderData);
   return (
     <div className="min-h-screen p-6 bg-gray-50">
       <div className="max-w-md mx-auto bg-white shadow-md rounded-lg p-6">

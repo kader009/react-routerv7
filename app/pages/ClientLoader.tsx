@@ -1,5 +1,3 @@
-import type { Route } from '../+types/root';
-
 export async function clientLoader() {
   const res = await fetch(`https://jsonplaceholder.typicode.com/todos`);
   const todo = await res.json();
