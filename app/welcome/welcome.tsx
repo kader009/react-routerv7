@@ -1,5 +1,4 @@
-import { Link } from "react-router";
-import Footer from "~/components/Footer";
+import { Link } from 'react-router';
 
 export function Welcome() {
   return (
@@ -10,7 +9,8 @@ export function Welcome() {
       <Link to={'/login'}>Login</Link>
       <br />
       <Link to={'/register'}>Register</Link>
-      <Footer/>
+      <br />
+      <Link to={'/register'}>Register</Link>
     </main>
   );
 }

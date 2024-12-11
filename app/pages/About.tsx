@@ -1,4 +1,12 @@
 import { use } from 'react';
+import type { Route } from '../+types/root';
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "About" },
+    { name: "About page", content: "All post data" },
+  ];
+}
 
 async function fetchData() {
   const response = await fetch(`https://jsonplaceholder.typicode.com/posts`);
