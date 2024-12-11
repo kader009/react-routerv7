@@ -10,7 +10,7 @@ export function Welcome() {
       <br />
       <Link to={'/register'}>Register</Link>
       <br />
-      <Link to={'/register'}>Register</Link>
+      <Link to={'/loader'}>Loader</Link>
     </main>
   );
 }
